@@ -74,7 +74,7 @@ colors = [(8, 48, 107),
 my_cmap = make_cmap(colors, bit=True)
 
 ### RETRIEVE DATA FROM DWD
-#link to DWD-ftp server
+#link to DWD server
 link = "https://opendata.dwd.de/climate_environment/CDC/regional_averages_DE/monthly/air_temperature_mean/regional_averages_tm_"+month+".txt"
 #retrieve data and cleanup !for Python2.7 comment out lines 39, 40 and uncomment lines 41, 42
 tm = urllib.request.urlretrieve(link, local)
